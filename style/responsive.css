@@ -1,0 +1,71 @@
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 20%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    .menu-toggle{
+        display: flex;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 70px;
+        width: 30%;
+        height: 50vh;
+        flex-direction: column;
+        align-items: center;
+        background-color:rgba(57, 224, 57, 0.9);
+        justify-content: space-evenly;
+        transform: translateY(-40%);
+        transition: all 0.5s;
+        opacity: 0;
+        border-radius: 5px;
+        
+        
+    }
+    nav ul li a{
+        color: rgb(176, 230, 176);
+    }
+    nav ul li a:hover{
+      color: white;
+      font-weight: bold;
+      
+    }
+
+    nav ul.slide {
+        transform: translateY(0);
+        opacity: 1;
+  
+    }
+
+    .top-flex li{
+        width: 100%;
+        z-index: -2;
+        
+    }
+
+    .top-header img{
+        width: 500px;
+        
+    }
+
+    .top-flex{
+        flex-direction: column;
+
+    }
+    
+    
+}
+
+
+/* ukuran mobile rendeah */
+@media screen and (max-width: 480px){
+    nav ul{
+        width: 5%;
+
+    }
+}
